@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply overflow-hidden
+  @apply overflow-hidden;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 .scaffold {
-  @apply flex h-screen w-screen overflow-hidden flex-col justify-center p-5 text-center align-middle;
+  @apply flex h-screen w-screen flex-col justify-center overflow-hidden p-5 text-center align-middle;
 }
 
 input {
@@ -20,4 +20,12 @@ input {
 
 .translateY-50 {
   transform: translateY(-50%);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

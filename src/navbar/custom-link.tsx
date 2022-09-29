@@ -6,7 +6,7 @@ export function CustomLink({ to, children, ...props }) {
       <NavLink
         to={to}
         {...props}
-        className={({ isActive }) => (isActive ? "text-teal-100" : "")}
+        className={({ isActive }) => (isActive  ? "text-teal-100" : "")}
       >
         {children}
       </NavLink>

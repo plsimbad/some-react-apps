@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { ToDo } from "./apps/todo/todo";
-import Weather from "./apps/weather/weather";
+import { Weather } from "./apps/weather/weather";
 import { Navbar } from "./navbar/navbar";
 
 export function App() {
