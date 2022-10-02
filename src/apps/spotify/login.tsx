@@ -15,7 +15,6 @@ export const Login = () => {
     let token = window.localStorage.getItem("token");
 
     if (!token && hash) {
-      console.log(hash, token);
       token = hash
         .substring(1)
         .split("&")
