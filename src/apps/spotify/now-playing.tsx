@@ -22,7 +22,6 @@ export const NowPlaying = () => {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res: any) => {
-        console.log(res);
         setNowPlaying(res.data);
       });
   };
